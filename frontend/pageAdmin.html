@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Допомога студенту</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        div{
+            font-size: 20 px;
+        }
+        .titleClass{
+            text-align: center
+                
+        }
+        .menuClass{
+            display: flex;
+            flex-wrap: wrap;
+            width: 96%;
+            height: 100px;
+            margin: 2%;
+            background-color: green;
+        }
+        .tabClass{
+            width: 24%;
+            height: 40 px;
+            margin-top: 10px;
+           text-align: center;
+            font-size: 26px;
+        }
+       .pageMain{
+            display: flex;
+            flex-wrap: wrap;
+            width: 96%;
+            margin: 2%; 
+        }
+        .mainColumn{
+            width: 32%;
+            margin-top: 10px;
+           text-align: center;
+            font-size: 22px; 
+        }
+        
+        body, tr{
+            background-color: burlywood;
+            align-content: center;
+            text-align: center;
+        }
+        div, table{
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            font-style: italic;
+            background-color: darkcyan;
+            width: 96%;
+            padding-top: 20px;
+            margin: 2%;
+            height: 100px;
+        }
+        table {
+          border-collapse: collapse;
+        }
+
+        table, td, th {
+          border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+  <h1> Help Students </h1>
+  
+   <div class="titleClass">
+   </div>
+   
+    <div class="menuClass">
+        <div class="tabClass" id="mainId">Головна</div>
+        <div class="tabClass" id="orderId">Замовлення</div>
+        <div class="tabClass" id="workerId">Виконавці</div>
+        <div class="tabClass" id="customerId">Замовники</div>
+        <div class="tabClass" id="adminId">Адміністратори</div>
+        <div class="tabClass" id="respondId">Відгуки</div>
+        <div class="tabClass" id="profId">Miй профіль</div>
+        <div class="tabClass" id="exitId">Вихід</div>
+    </div>
+    
+    <div class="pageMain"> 
+          <div class="mainColumn">
+           <img src="images/1.jpg" alt="">
+           </div>
+            <div class="mainColumn">
+            Виконуємо контрольні, індивідуальні, реферати, курсові, дипломні, презентації, переклади  та ін. 
+            <br>
+            Надаємо онлайн-допомогу зі всіх предметів. 
+            </div>
+            <div class="mainColumn">
+            <img src="images/2.jpg" alt="">
+            </div>
+    </div>
+    
+     <div class="pageOrder" style="display:none">  </div>
+     
+     <div class="pageCustomer" style="display:none">
+     <div class="customersTable"></div> 
+     <br>
+       <button type="button" id="deactivateCustomerButtonId">Видалити замовника  </button> 
+       <input type="number" id="inputDeactivateCustomerId">  
+       <div id="massageDeactivateCustomerId">
+       </div>
+     </div>
+    
+    <div class="pageWorker" style="display:none">
+             <br>
+       <button type="button" id="showButtonWorkerId"> Show worker </button> 
+       <input type="number" id="inputWorkerId">  
+       <div id="showWorkerId">
+       </div>
+
+       <br>
+       <button type="button" id="showAllWorkersId"> Show all workers </button>   
+       <div id="workers">
+          <table id="tableWorkersId"></table>
+       </div>
+       
+         <br>
+       <button type="button" id="activateWorkerButtonId">Додати виконавця  </button> 
+       <input type="number" id="inputActivateWorkerId">  
+       <div id="massageActivateWorkerId">
+       </div>
+       
+        <br>
+       <button type="button" id="deactivateWorkerButtonId">Видалити виконавця  </button> 
+       <input type="number" id="inputDeactivateWorkerId">  
+       <div id="massageDeactivateWorkerId">
+       </div>
+        
+    </div>
+    
+    <div class="pageAdmin" style="display:none"></div>    
+    
+    <div class="pageProf" style="display:none">
+    
+        <table id="tableMyProfId"></table>
+        
+    </div>
+    
+    <script src="js/order.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/global.js"></script>
+</body>
+</html>

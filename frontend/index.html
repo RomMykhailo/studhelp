@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Допомога студенту</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        .titleClass{
+            text-align: center
+                
+        }
+        .menuClass{
+            display: flex;
+            height: 80px;
+            background-color: green;
+        }
+        .tabClass{
+            width: 16%;
+            margin: 0 px;
+            margin-top: 10px;
+           text-align: center;
+            font-size: 26px;
+        }
+        body{
+            background-color: burlywood;
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            font-style: italic;
+            
+            background-color: darkcyan;
+            width: 96%;
+            padding-top: 20px;
+            margin-left: 2%;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+  <h1> Help Students </h1>
+  
+   <div class="titleClass">
+   </div>
+   
+    <div class="menuClass">
+        <div class="tabClass" id="mainId">Головна</div>
+        <div class="tabClass" id="orderId">Замовлення</div>
+        <div class="tabClass" id="contactId">Контакти</div>
+        <div class="tabClass" id="respondId">Відгуки</div>
+        <div class="tabClass" id="profId">Miй профіль</div>
+        <div class="tabClass" id="exitId">Вихід</div>
+    </div>
+    
+    <div class="pageMain" style="display:none"> 
+    
+    </div>
+    
+    <div class="pageOrder" style="display:none">
+        
+        
+    </div>
+    
+    <br>
+   <button type="button" id="showWorkerId"> Show worker </button> 
+   <input type="number" id="inputWorkerId">  
+   <div id="workerId">
+   </div>
+   
+   <br>
+   <button type="button" id="showAllWorkersId"> Show all workers </button>   
+   <div id="workers">
+      <table id="tableWorkersId"></table>
+       
+   </div>
+    <script src="js/order.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/global.js"></script>
+</body>
+</html>

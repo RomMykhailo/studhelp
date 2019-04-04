@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <style>
+        body{
+            background-color: darkseagreen;
+        }
+        container{
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+   <form>
+          
+       <label for="workerNameId">Name:</label>
+       <input type="text" id="workerNameId" placeholder="Your name">
+       <br>
+       <label for="workerEmailId">Email:</label>
+       <input type="email" placeholder="Email" id="workerEmailId">
+       <br>
+       <label for="workerPasswordId">Password:</label>
+       <input type="password" id="workerPasswordId">
+       <br>
+       <label for="workerConfirmId">Confirm password:</label>
+       <input type="password" id="workerConfirmId">
+       <br>
+       <textarea name="Description" id="workerDescriptionId" placeholder="Description" cols="40" rows="7"></textarea>
+       <br>
+          <button type="button" id="workerRegisterId">Register</button>
+     
+   </form>
+   </div>
+   <br>
+   <button type="button" id="showWorkerId"> Show worker </button> 
+   <input type="number" id="inputWorkerId">  
+   <div id="workerId">
+   </div>
+   
+   <br>
+   <button type="button" id="showAllWorkersId"> Show all workers </button>   
+   <div id="workers">
+      <table id="tableWorkersId"></table>
+       
+   </div>
+   
+   <script src="js/jquery.min.js"></script>
+   <script src= "js/global.js"></script>
+   <script src="js/worker.js"></script>
+    
+</body>
+</html>

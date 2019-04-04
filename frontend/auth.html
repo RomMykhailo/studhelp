@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Authorization</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+    body{
+        align-content: center;
+        text-align: center;
+        font-size: 24px;
+        }
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="menuClass">
+        <div class="tabClass" id="registerId">Зареєструватися</div>
+        <div class="tabClass" id="signinId">Вхід</div>
+    </div>
+    <div id="massageId">        
+    </div>
+   
+   <div class="signupRole" style="display:none">
+   <label for="signupRoleId">Зареєструватися як: </label>
+        <select id="signupRoleId">
+            <option value="WORKER">Виконавець</option>
+            <option value="CUSTOMER">Замовник</option>
+        </select>
+        <br>
+        <button type="button" id="signupRoleButtonId">Підтвердити</button>
+    </div>
+    
+     <div class="signupCustomer" style="display:none">
+       <form>
+           <label for="customerNameId">NickName:</label>
+           <input type="text" id="customerNameId" placeholder="Your nickname">
+           <br>
+           <label for="customerEmailId">Email:</label>
+           <input type="email" placeholder="Email" id="customerEmailId">
+           <br>
+           <label for="customerPasswordId">Password:</label>
+           <input type="password" id="customerPasswordId">
+           <br>
+           <label for="customerConfirmId">Confirm password:</label>
+           <input type="password" id="customerConfirmId">
+           <br>
+           <label for="customerPhoneId">Phone:</label>
+           <input type="phoneNumber" placeholder="phoneNumber" id="customerPhoneId">
+           <br>
+            <button type="button" id="customerRegisterId">Зареєструватися</button>
+<!--             <p><input type="submit" id="customerRegisterId" value="Зареєструватися"></p>-->
+       </form>
+   </div>
+    
+    <div class="signupWorker" style="display:none">
+       <form>
+
+           <label for="workerNameId">NickName:</label>
+           <input type="text" id="workerNameId" placeholder="Your name">
+           <br>
+           <label for="workerEmailId">Email:</label>
+           <input type="email" placeholder="Email" id="workerEmailId">
+           <br>
+           <label for="workerPasswordId">Password:</label>
+           <input type="password" id="workerPasswordId">
+           <br>
+           <label for="workerConfirmId">Confirm password:</label>
+           <input type="password" id="workerConfirmId" >
+            <br>
+           <label for="workerPhoneId">Phone:</label>
+          <input type="phoneNumber" placeholder="phoneNumber" id="workerPhoneId">
+           <br>
+           <textarea name="Description" id="workerDescriptionId" placeholder="Description" cols="40" rows="7"></textarea>
+           <br>
+            <button type="button" id="workerRegisterId">Зареєструватися</button>
+<!--             <p><input type="submit" id="workerRegisterId" value="Зареєструватися"></p>-->
+       </form>
+   </div>
+     
+      <div class="signin" style="display:none">
+   <form>          
+       <label for="signinEmailId">Email:</label>
+       <input type="email" placeholder="Email" id="signinEmailId">
+       <br>
+       <label for="signinPasswordId">Password:</label>
+       <input type="password" id="signinPasswordId">
+       <br>
+        <label for="roleId">Хто Ви?</label>
+        <select id="roleId">
+            <option value="WORKER">Виконавець</option>
+            <option value="CUSTOMER">Замовник</option>
+            <option value="ADMIN">Адміністратор</option>
+        </select>
+        <br>
+        <button type="button" id="signinButtonId">Вхід</button>
+   </form>
+   </div>
+      
+   <script src="js/jquery.min.js"></script>
+ 
+   <script src= "js/global.js"></script>
+   <script src="js/auth.js"></script>
+</body>
+</html>
